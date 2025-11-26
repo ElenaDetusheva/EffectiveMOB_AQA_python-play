@@ -4,8 +4,7 @@ import pytest
 def browser_context_args(browser_context_args):
     return {
         **browser_context_args,
-        # "browser": "firefox",
-        "viewport":{
+            "viewport":{
             "width": 1920,
             "height": 960,
         }
