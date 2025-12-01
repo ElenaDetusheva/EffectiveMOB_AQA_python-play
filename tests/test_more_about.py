@@ -41,3 +41,6 @@ def test_goto_vacancies(page :Page, context:BrowserContext):
     expect(vacancies_page.main_heading).to_have_text("Наши Junior вакансии")
     expect(new_tab).to_have_title("Вакансии")
     expect(new_tab).to_have_url("https://ai-hunt.ru/vacancies/")
+
+    new_tab.bring_to_front()
+    vacancies_page.click_aqa_python_link()
